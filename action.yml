@@ -17,6 +17,9 @@ inputs:
   oauth-secret:
     description: 'Your Tailscale OAuth Client Secret.'
     required: false
+  exit_node_ip:
+    description: 'Tailscale exit node IP to use.'
+    required: true
   tags:
     description: 'Comma separated list of Tags to be applied to nodes. The OAuth client must have permission to apply these tags.'
     required: false
