@@ -109,6 +109,7 @@ runs:
           TAILSCALE_AUTHKEY: ${{ inputs.authkey }}
           ADDITIONAL_ARGS: ${{ inputs.args }}
           HOSTNAME: ${{ inputs.hostname }}
+          TAILSCALE_EXIT_NODE_IP: ${{ inputs.exit_node_ip }}
           TS_EXPERIMENT_OAUTH_AUTHKEY: true
         run: |
           if [ -z "${HOSTNAME}" ]; then
