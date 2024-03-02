@@ -29,7 +29,7 @@ on tailnets which use [Device Approval](https://tailscale.com/kb/1099/device-app
 
 ## Defining Tailscale version
 
-Which Tailscale version to use can be set like this:
+Configure the connection by passing in OAuth client id and secret, and the tailnet *internal* IP of the exit node.
 
 ```yaml
   - name: Tailscale
