@@ -37,6 +37,7 @@ Which Tailscale version to use can be set like this:
     with:
       oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
       oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+      exit_node_ip: ${{ secrets.TAILSCALE_EXIT_NODE_IP }}
       tags: tag:ci
       version: 1.52.0
 ```
