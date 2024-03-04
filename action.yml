@@ -119,5 +119,5 @@ runs:
             TAILSCALE_AUTHKEY="${{ inputs['oauth-secret'] }}?preauthorized=true&ephemeral=true"
             TAGS_ARG="--advertise-tags=${{ inputs.tags }}"
           fi
-          timeout 5m sudo -E tailscale up ${TAGS_ARG} --authkey=${TAILSCALE_AUTHKEY} --hostname=${HOSTNAME} --exit-node "${TAILSCALE_EXIT_NODE_IP}" --accept-routes ${ADDITIONAL_ARGS}
+          timeout 15m sudo -E tailscale up ${TAGS_ARG} --authkey=${TAILSCALE_AUTHKEY} --hostname=${HOSTNAME} --exit-node "${TAILSCALE_EXIT_NODE_IP}" --accept-routes ${ADDITIONAL_ARGS}
           sleep 5
